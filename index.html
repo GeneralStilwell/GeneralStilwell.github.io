@@ -5,26 +5,32 @@
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Diwei SHI</title>
+    <!--JQuery-->
+    <script src="static/jquery-3.6.0.min.js"></script>
+    <!-- JS file-->
+    <script src="static/echarts.min.js"></script>
+    <script src="static/scripts.js"></script>
     <!--CSS file-->
     <link rel="stylesheet" type="text/css" href="static/style.css">
 </head>
-<body >
+<body>
     <div class = "container-fluid" >
         <div class = "row">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse position-fixed">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse position-fixed">
                 <div class="position-sticky pt-3 p-3">
                     <div class = "row text-center">
-                        <div class = "col" style = "color:#424242">
+                        <div class = "col">
                             <div style = "padding:8%;">
                                 <img id = "avatar" src = "static/images/avatar.jpg" class = "img-fluid" alt = "..." style = "border-radius: 50%;">
                             </div>
                             
-                            <h4 style = "font-family: 'Microsoft YaHei'; ">史 迪威</h4>
-                            <h4>Diwei SHI</h4>
+                            <h4 style = "font-family: 'Microsoft YaHei'; color:#c0c0c0">史 迪威</h4>
+                            <h4 style = "color:#c0c0c0">Diwei SHI</h4>
                         </div>
-                        
                     </div>
+
                     <hr>
+
                     <ul class="nav flex-column mb-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href = "#" >
@@ -72,29 +78,24 @@
                     </ul>
                 </div>
             </nav>
-            <main  class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <main  id = "main" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class = "row" style = "padding-left:5%;padding-top: 10%; padding-bottom:10%;border:0px solid grey;">
-                    <h2 id = "hello" style = "color:#424242;">Hello, my name is <span style="color:#40C4FF;">Diwei Shi</span>, </h2>
+                    <h2 id = "hello" style = "color:#424242;">Hello, my name is <span style="color:#9b9b9b;">Diwei Shi</span>, </h2>
                     <h2 style = "color:#424242;"> 
-                        a <span style = "color : #40C4FF;">quantitative analyst</span> based in Tokyo, Japan.
+                        a <span style = "color : #9b9b9b;">quantitative analyst</span> based in Tokyo, Japan.
                     </h2>
                     <p style="padding-top:1%; padding-right:20%;color:#424242;" >
                         Thank you for visiting my personal site. This site might contain some point of views with respect to investment. The views expressed are personal and do not represent any research report or any statement made by any institution where I'm working, worked or studied.
                          None of the information contained in this website constitutes investment advice.
                     </p>
                     <p style = "color:#424242;"> follow me on 
-                        <span style = "color : #40C4FF;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                            </svg>
-                            Twitter
-                        </span> and 
-                        <span style = "color : #40C4FF;">
+                        <span style = "color : #0a66c2;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
                                 <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                             </svg>
                             LinkedIn
                         </span>
+                        or click here to view my profile
                         .
                     </p>
                 </div>
@@ -103,13 +104,13 @@
                 <div class = "row" style = "padding-left:5%; padding-right:5%; border:0px solid grey;">
                     <div class = "row g-2">
                         <div class = "col-12" style = "padding-right:20%">
-                            <h2 id = "education" style = "border-bottom: 2px solid #40C4FF;">Education background</h2>
+                            <h2 id = "education" style = "border-bottom: 2px solid #9b9b9b;">Education background</h2>
                         </div>
                     </div>
                     
                     <div class = "row g-2">
-                        <div class = "col-lg-6 sm-12 md-12 p-3" style = "border:0px solid grey;">
-                            <div class="p-5 border rounded-3" >
+                        <div class = "col-xl-4 col-lg-6 col-sm-12 col-md-12 p-3" style = "border:0px solid grey;">
+                            <div class="p-5 border rounded-3" style = "background-color: #d8d8d8;">
                                 <h5>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
                                         <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
@@ -130,8 +131,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class = "col-lg-6 sm-12 md-12 p-3" style = "border:0px solid grey;">
-                            <div class="p-5 border rounded-3" >
+                        <div class = "col-xl-4 col-lg-6 col-sm-12 col-md-12 p-3" style = "border:0px solid grey;">
+                            <div class="p-5 rounded-3" style = "border:1px solid #cecece;">
                                 <h5>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                         <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
@@ -151,8 +152,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class = "col-lg-6 sm-12 md-12 p-3" style = "border:0px solid grey;">
-                            <div class="p-5 border rounded-3" >
+                        <div class = "col-xl-4 col-lg-6 col-sm-12 col-md-12 p-3" style = "border:0px solid grey;">
+                            <div class="p-5 rounded-3" style = "border:1px solid #cecece;">
                                 <h5>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                         <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
@@ -172,8 +173,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class = "col-lg-6 sm-12 md-12 p-3" style = "border:0px solid grey;">
-                            <div class="p-5 border rounded-3" >
+                        <div class = "col-xl-4 col-lg-6 col-sm-12 col-md-12 p-3" style = "border:0px solid grey;">
+                            <div class="p-5 rounded-3" style = "border:1px solid #cecece;">
                                 <h5>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                         <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
@@ -193,8 +194,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class = "col-lg-6 sm-12 md-12 p-3" style = "border:0px solid grey;">
-                            <div class="p-5 border rounded-3" >
+                        <div class = "col-xl-4 col-lg-6 col-sm-12 col-md-12 p-3" style = "border:0px solid grey;">
+                            <div class="p-5 border rounded-3" style = "background-color: #d8d8d8;">
                                 <h5>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
                                         <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
@@ -211,7 +212,7 @@
                                     <li>Southwestern University of Finance and Economics</li>
                                 </ul>
                                 <a href = "https://jinrong.swufe.edu.cn/English_Version.htm">
-                                    <img src="static/images/SWUFE_logo.jpeg" class="img-fluid rounded d-block" alt="..." style= "max-height: 50px;">
+                                    <img src="static/images/SWUFE_Logo.png" class="img-fluid rounded d-block" alt="..." style= "max-height: 50px;">
                                 </a>
                             </div>    
                         </div>
@@ -220,18 +221,125 @@
                 </div>
 
                 <!--working experience part-->
-                <div class = "row" style = "padding-left:5%; padding-right:5%;">
+                <div class = "row" style = "padding-left:5%; padding-right:5%; padding-top: 10%;">
                     <div class = "row g-2">
                         <div class = "col-12" style = "padding-right:20%">
-                            <h2 id = "work" style = "border-bottom: 2px solid #40C4FF;">Working Experience</h2>
+                            <h2 id = "work" style = "border-bottom: 2px solid #9b9b9b;">Working Experience</h2>
                         </div>
                     </div>
-                    <div class="bg-light rounded-3" style = "margin-top:3%; margin-bottom: 3%;">
-                        <div class="container-fluid py-5">
-                          <h5>Aristagora Advisors</h5>
-                          <p>When working at Aristagora as a quant analyst, I helped the portfolio manager to manage some Fund of Funds portfolios. My track 
-                              record of the best portfolio, alhough only counts for a small porttion of AuM, reveals a strong performance.
-                          </p>
+                    <div class="rounded-3" style = "margin-top:3%; margin-bottom: 3%; width: 100%; background-color: #d8d8d8;">
+                        <div  class="container-fluid py-5" style="width: 100%;">
+                            <div class = "row g-2">
+                                <div class = "col-6">
+                                    <h4>Aristagora Advisors </h4>
+                                    <p><span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                          </svg>
+                                    </span>Aug 2020 - Present</p>
+                                </div>
+                                <div class = "col-6">
+                                    <a class = "d-flex justify-content-end" href = "https://aristagora.com/en/">
+                                        <img src="static/images/Arist_Logo.png" class="img-fluid rounded d-block" alt="..." style= "max-height: 50px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <p >When working at Aristagora as a quant analyst, I helped the portfolio manager to manage some Fund of Funds portfolios. My track 
+                                record of the best portfolio, alhough only counts for a small porttion of AuM, reveals a strong performance. A simple review of my
+                                track record can be seen below.
+                            </p>
+                            <br>
+                            
+                            <div class = "row">
+                                <div class = "col-xl-6 col-lg-12">
+                                    <!-- EChartsDOM -->
+                                    <div id="navline" style="width: 100%;height:400px; "></div>
+                                    <script>nav_chart = navChart();</script>
+                                </div>
+
+                                <div class = "col-xl-6 col-lg-12">
+                                    <table class="table table-sm">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Statistics</th>
+                                            <th scope="col">Since I joined</th>
+                                            <th scope="col">Since inception</th>
+                                            <th scope="col">HFRI FoF (JPY)</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">Cumulative Return</th>
+                                            <td>25.43%</td>
+                                            <td>50.74%</td>
+                                            <td>48.55%</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Annualized Return</th>
+                                            <td></td>
+                                            <td>7.87%</td>
+                                            <td>7.58%</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Annualized Volatility</th>
+                                            <td ></td>
+                                            <td >8.11%</td>
+                                            <td>8.64%</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Sharpe Ratio</th>
+                                            <td></td>
+                                            <td>0.97</td>
+                                            <td>0.88</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Downside Deviation</th>
+                                            <td></td>
+                                            <td>4.12%</td>
+                                            <td>5.40%</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Sortino Ratio</th>
+                                            <td></td>
+                                            <td>1.91</td>
+                                            <td>1.40</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Max Drawdown</th>
+                                            <td></td>
+                                            <td>-5.98%</td>
+                                            <td>-10.75%</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">Calmar Ratio</th>
+                                            <td></td>
+                                            <td>0.79</td>
+                                            <td>0.70</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">MDD Length (month)</th>
+                                            <td></td>
+                                            <td>3</td>
+                                            <td>18</td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                            <br>
+                            <p>Apart from helping the portfolio manager with some quantitative analysis, I also developed some tools to efficiently manage the portfolios. One of my biggest achievements is the portfolio optimizer. We all know 
+                                by simply changing the allocation to each asset in the portfolio, one can reach more desirable risk return profile. But one might ask what the optimal allocation is and how he or she can achieve it. Initially 
+                                introduced by Harry Markowitz in 1952, the Modern Portfolio Theory has contributed significantly to finance industry both in academic field and in practice. It provides a mathematical and scientific methodology
+                                to the solution of the portfolio selection problem.
+                            </p>
+                            <p>I followed the basic Mean-Variance optmization approach, but added "VaR constraint" to the whole portfolio and "weight constraints" to each asset. The reason is simply because for a fund of funds, you can not short a hedge fund's product, nor borrow to buy
+                                the product easily due to KYC things; besides, you also face the "minimum investment" requirement so that your weight is essentially restricted. Besides, I didn't take rebalancing into account as most hedge funds 
+                                require a notice period of at least one month so that you cannot really do anything on "strategically changing your allocation" and the liquidity of FoF is really low. A demo of how the optimizer works can be see below.
+                            </p>
+                            <h1>Optimizer DEMO here</h1>
+                            <br>
+                            
                         </div>
                     </div>
                 </div>
@@ -242,9 +350,25 @@
  
     <script>
         document.getElementById("sidebarMenu").style.height = String(window.innerHeight) + "px";
+        
         window.onresize = function(){
             document.getElementById("sidebarMenu").style.height = String(window.innerHeight) + "px";
+            nav_chart.resize();
         }
+        /*
+        var lis_div = $('div');
+        for (var i=0; i< lis_div.length; i++){
+            console.log(lis_div[i].offsetTop);
+        }
+        console.log(lis_div);
+        $(window).scroll(function(){
+            
+            var scrollTop = $(window).scrollTop();
+            
+            console.log($(window).height());
+            console.log($(document).height());
+        })
+        */
     </script>
 
 </body>
